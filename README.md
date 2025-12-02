@@ -39,6 +39,8 @@ Each day contains:
 | 13  | Automating builds and tests                          | [ ]    |
 | 14  | Integrating Git with CI/CD pipeline                  | [ ]    |
 
+---
+
 
 ### Week 3 – Containers and Kubernetes (Day 15–21)
 
@@ -51,6 +53,8 @@ Each day contains:
 | 19  | Kubernetes introduction, Minikube setup | [ ]    |
 | 20  | Pods, deployments, services             | [ ]    |
 | 21  | Scaling and rolling updates             | [ ]    |
+
+---
 
 
 ### Week 4 – Cloud, IaC, Monitoring (Day 22–30)
