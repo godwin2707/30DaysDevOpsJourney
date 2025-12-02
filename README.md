@@ -1,81 +1,77 @@
-30 Days DevOps Journey
+Here's your **complete `README.md`** file with the correctly formatted progress table (checkboxes), no emojis, no scrambled text, and aligned to your 30-day DevOps roadmap:
+
+---
+
+# 30 Days DevOps Journey
 
 This repository documents my 30-day DevOps learning journey.
 It follows a structured roadmap covering Linux, Git, CI/CD, Docker, Kubernetes, AWS, Terraform, Ansible, Monitoring, and a final project.
 
 Each day contains:
 
-What I learned
-
-Commands or code
-
-Notes
-
-
+* What I learned
+* Commands or code
+* Notes
 
 ---
 
-Roadmap Overview
+## Roadmap Overview
 
-Week 1 – Linux Fundamentals (Day 1–7)
+### Week 1 – Linux Fundamentals (Day 1–7)
 
-Day	Topic	Status
+| Day | Topic                                          | Status |
+| --- | ---------------------------------------------- | ------ |
+| 1   | Linux introduction, basic commands, filesystem | [ ]    |
+| 2   | File operations, permissions                   | [ ]    |
+| 3   | Users, groups, sudo, environment variables     | [ ]    |
+| 4   | Package managers (apt, yum, dnf)               | [ ]    |
+| 5   | Process management (ps, top, kill, jobs)       | [ ]    |
+| 6   | Disk usage, networking commands                | [ ]    |
+| 7   | Bash scripting basics                          | [ ]    |
 
-1	Linux introduction, basic commands, filesystem	[ ]
-2	File operations, permissions	[ ]
-3	Users, groups, sudo, environment variables	[ ]
-4	Package managers (apt, yum, dnf)	[ ]
-5	Process management (ps, top, kill, jobs)	[ ]
-6	Disk usage, networking commands	[ ]
-7	Bash scripting basics	[ ]
+### Week 2 – Git and CI/CD (Day 8–14)
 
+| Day | Topic                                                | Status |
+| --- | ---------------------------------------------------- | ------ |
+| 8   | Git basics, commits, repository setup                | [ ]    |
+| 9   | Branching and merging                                | [ ]    |
+| 10  | Git stash, reset, GitHub usage                       | [ ]    |
+| 11  | CI/CD concepts                                       | [ ]    |
+| 12  | Installing Jenkins or GitHub Actions, first pipeline | [ ]    |
+| 13  | Automating builds and tests                          | [ ]    |
+| 14  | Integrating Git with CI/CD pipeline                  | [ ]    |
 
-Week 2 – Git and CI/CD (Day 8–14)
+### Week 3 – Containers and Kubernetes (Day 15–21)
 
-Day	Topic	Status
+| Day | Topic                                   | Status |
+| --- | --------------------------------------- | ------ |
+| 15  | Docker introduction and installation    | [ ]    |
+| 16  | Images and containers                   | [ ]    |
+| 17  | Dockerfile basics                       | [ ]    |
+| 18  | Volumes and networks                    | [ ]    |
+| 19  | Kubernetes introduction, Minikube setup | [ ]    |
+| 20  | Pods, deployments, services             | [ ]    |
+| 21  | Scaling and rolling updates             | [ ]    |
 
-8	Git basics, commits, repository setup	[ ]
-9	Branching and merging	[ ]
-10	Git stash, reset, GitHub usage	[ ]
-11	CI/CD concepts	[ ]
-12	Installing Jenkins or GitHub Actions, first pipeline	[ ]
-13	Automating builds and tests	[ ]
-14	Integrating Git with CI/CD pipeline	[ ]
+### Week 4 – Cloud, IaC, Monitoring (Day 22–30)
 
-
-Week 3 – Containers and Kubernetes (Day 15–21)
-
-Day	Topic	Status
-
-15	Docker introduction and installation	[ ]
-16	Images and containers	[ ]
-17	Dockerfile basics	[ ]
-18	Volumes and networks	[ ]
-19	Kubernetes introduction, Minikube setup	[ ]
-20	Pods, deployments, services	[ ]
-21	Scaling and rolling updates	[ ]
-
-
-Week 4 – Cloud, IaC, Monitoring (Day 22–30)
-
-Day	Topic	Status
-
-22	AWS introduction, EC2 basics	[ ]
-23	S3 storage basics	[ ]
-24	Terraform introduction, first script	[ ]
-25	Terraform variables, outputs, state files	[ ]
-26	Ansible basics and first playbook	[ ]
-27	Prometheus installation	[ ]
-28	Grafana dashboard setup	[ ]
-29	Full DevOps project: Dockerize, push, deploy to Kubernetes, monitor	[ ]
-30	DevOps interview preparation, resume improvements	[ ]
-
-
+| Day | Topic                                                               | Status |
+| --- | ------------------------------------------------------------------- | ------ |
+| 22  | AWS introduction, EC2 basics                                        | [ ]    |
+| 23  | S3 storage basics                                                   | [ ]    |
+| 24  | Terraform introduction, first script                                | [ ]    |
+| 25  | Terraform variables, outputs, state files                           | [ ]    |
+| 26  | Ansible basics and first playbook                                   | [ ]    |
+| 27  | Prometheus installation                                             | [ ]    |
+| 28  | Grafana dashboard setup                                             | [ ]    |
+| 29  | Full DevOps project: Dockerize, push, deploy to Kubernetes, monitor | [ ]    |
+| 30  | DevOps interview preparation, resume improvements                   | [ ]    |
 
 ---
 
-Repository Structure
+## Repository Structure
 
+```
 30Days-DevOps/
 │
 ├── Week-01-Linux/
@@ -117,24 +113,30 @@ Repository Structure
 │   └── Day30-Interview/
 │
 └── README.md
-
+```
 
 ---
 
-Daily Documentation Template
+## Daily Documentation Template
 
-Day X — Title
+Use this format for each day's README file:
 
-What I Learned
+### Day X — Title
 
+#### What I Learned
 
-Commands / Code
+*
 
+#### Commands / Code
+
+```
 # example
+```
 
-Notes
+#### Notes
 
-
+*
 
 ---
 
+Let me know if you want this `README.md` injected into your ZIP or turned into a pre-made GitHub repo.
