@@ -1,1 +1,43 @@
 
+
+Day 1 — Linux Intro & Basic Commands
+
+What I Learned
+
+Linux is the foundation of DevOps because most servers, cloud systems, containers, and automation tools run on Linux.
+
+Understanding the Linux filesystem helps navigate and manage configurations, logs, executables, and user environments.
+
+Basic shell commands like ls, cd, pwd, mkdir, and rm are essential for moving around the system and managing files.
+
+Linux has no recycle bin—commands directly affect the system, so careful execution is important.
+
+Mastering these fundamentals is required before learning advanced DevOps tools like Docker, Kubernetes, and CI/CD pipelines.
+
+
+Commands / Code
+
+pwd            # show current directory
+ls             # list files and folders
+ls -l          # detailed list view
+ls -a          # show hidden files
+cd folder      # move into folder
+cd ..          # move back
+cd /           # go to root directory
+cd ~           # go to home directory
+mkdir project  # create directory
+touch file.txt # create empty file
+rm file.txt    # remove file
+rm -r folder   # remove folder and contents
+
+Notes
+
+/etc contains system configuration files; /var holds logs; /bin and /usr/bin contain essential commands; /home stores user data.
+
+Linux navigation is like learning the map of a city—DevOps engineers must be fluent in it.
+
+These basics form the foundation for automation, deployments, debugging, and cloud operations.
+
+
+
+--
