@@ -1,7 +1,3 @@
-Here's your **complete `README.md`** file with the correctly formatted progress table (checkboxes), no emojis, no scrambled text, and aligned to your 30-day DevOps roadmap:
-
----
-
 # 30 Days DevOps Journey
 
 This repository documents my 30-day DevOps learning journey.
@@ -29,6 +25,7 @@ Each day contains:
 | 6   | Disk usage, networking commands                | [ ]    |
 | 7   | Bash scripting basics                          | [ ]    |
 
+
 ### Week 2 – Git and CI/CD (Day 8–14)
 
 | Day | Topic                                                | Status |
@@ -41,6 +38,7 @@ Each day contains:
 | 13  | Automating builds and tests                          | [ ]    |
 | 14  | Integrating Git with CI/CD pipeline                  | [ ]    |
 
+
 ### Week 3 – Containers and Kubernetes (Day 15–21)
 
 | Day | Topic                                   | Status |
@@ -52,6 +50,7 @@ Each day contains:
 | 19  | Kubernetes introduction, Minikube setup | [ ]    |
 | 20  | Pods, deployments, services             | [ ]    |
 | 21  | Scaling and rolling updates             | [ ]    |
+
 
 ### Week 4 – Cloud, IaC, Monitoring (Day 22–30)
 
@@ -136,7 +135,3 @@ Use this format for each day's README file:
 #### Notes
 
 *
-
----
-
-Let me know if you want this `README.md` injected into your ZIP or turned into a pre-made GitHub repo.
