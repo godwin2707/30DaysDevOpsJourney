@@ -25,6 +25,7 @@ Each day contains:
 | 6   | Disk usage, networking commands                | [ ]    |
 | 7   | Bash scripting basics                          | [ ]    |
 
+---
 
 ### Week 2 – Git and CI/CD (Day 8–14)
 
@@ -114,24 +115,3 @@ Each day contains:
 └── README.md
 ```
 
----
-
-## Daily Documentation Template
-
-Use this format for each day's README file:
-
-### Day X — Title
-
-#### What I Learned
-
-*
-
-#### Commands / Code
-
-```
-# example
-```
-
-#### Notes
-
-*
