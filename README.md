@@ -18,7 +18,7 @@ Each day contains:
 | Day | Topic                                          | Status |
 | --- | ---------------------------------------------- | ------ |
 | 1   | Linux introduction, basic commands, filesystem | Done   |
-| 2   | File operations, permissions                   | [ ]    |
+| 2   | File operations, permissions                   | Done    |
 | 3   | Users, groups, sudo, environment variables     | [ ]    |
 | 4   | Package managers (apt, yum, dnf)               | [ ]    |
 | 5   | Process management (ps, top, kill, jobs)       | [ ]    |
