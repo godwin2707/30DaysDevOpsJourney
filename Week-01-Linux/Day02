@@ -1,0 +1,67 @@
+
+Day 2 — File Operations & File Permissions
+
+What I Learned
+
+Basic file operations (cp, mv, cat, nano, vi) are used to copy, move, rename, view, and edit files in Linux.
+
+nano is beginner-friendly; vi uses modes (i to insert, Esc to exit, :wq to save & quit).
+
+Linux permissions use three roles: owner, group, and others — each with read (r), write (w), and execute (x) permissions.
+
+chmod modifies permissions using symbolic or numeric (octal) values.
+
+chown changes file/folder ownership (user and group).
+
+umask controls default permissions for every new file/folder automatically, even if the user never manually sets it.
+
+Default file permissions come from: base permission (666) minus umask (022) = 644.
+
+Understanding permissions prevents common Linux errors like “Permission denied” and is essential for DevOps deployments and scripts.
+
+
+Commands / Code
+
+# File operations
+cp file.txt copy.txt              # copy file
+cp -r folder/ backup/             # copy folder
+mv file.txt newname.txt           # rename file
+mv file.txt ../moving/            # move file to another folder
+cat file.txt                       # view file content
+nano file.txt                      # open file in nano editor
+vi file.txt                        # open file in vi (i = insert, :wq = save & quit)
+
+# Check current permissions
+ls -l                              # view permissions and ownership
+
+# chmod (permissions)
+chmod 755 script.sh                # rwx r-x r-x
+chmod 644 file.txt                 # rw- r-- r--
+chmod u+x file.sh                  # add execute to user
+chmod g-w file.txt                 # remove write from group
+
+# chown (ownership)
+sudo chown user file.txt           # change owner
+sudo chown user:group file.txt     # change owner and group
+sudo chown -R user:group folder/   # recursive ownership change
+
+# umask (default permissions)
+umask                              # view current umask (typically 022)
+umask 027                          # temporarily change umask
+
+Notes
+
+.. means “go to parent directory”; ~ means “home directory”.
+
+New files do not get execute permissions by default for safety.
+
+chmod numbers: 7=rwx, 6=rw-, 5=r-x, 4=r--.
+
+Folders start from 777 before umask is applied; files start from 666.
+
+umask runs automatically in the background — you don’t need to manually set it for it to work.
+
+Correct permissions and ownership are critical when working with servers, scripts, logs, and deployments in DevOps.
+
+
+
