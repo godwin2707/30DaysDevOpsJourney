@@ -1,0 +1,61 @@
+Day 3 — Users, Groups, sudo & Environment Variables
+What I Learned
+
+A user is an account in Linux; users have unique IDs and home directories.
+
+A group is a collection of users used to manage shared permissions.
+
+root is the superuser with full control; normal users need sudo for admin tasks.
+
+sudo allows running commands with root privileges temporarily and safely.
+
+Environment variables store values that programs and the system use ($HOME, $USER, $PATH).
+
+The PATH variable tells Linux where to look for executables when commands are run.
+
+Custom variables can store temporary or permanent values for automation and scripts.
+
+Adding variables to .bashrc makes them persistent across sessions.
+
+Commands / Code
+# Users & Groups
+whoami                     # current user
+cat /etc/passwd            # list all users
+groups                     # show groups of current user
+sudo adduser testuser      # create new user
+sudo groupadd devgroup     # create new group
+sudo usermod -aG devgroup testuser  # add user to group
+
+# Sudo
+sudo command               # run command as root
+sudo su                    # switch to root user
+exit                       # exit from root session
+
+# Environment Variables
+echo $HOME                 # home directory
+echo $USER                 # username
+echo $PATH                 # directories searched for commands
+printenv                   # list all environment variables
+
+# Create variable
+MYNAME="Godwin"
+echo $MYNAME
+
+# Permanent variable
+echo 'export ROLE="DevOps Engineer"' >> ~/.bashrc
+source ~/.bashrc
+echo $ROLE
+
+Notes
+
+Users organize system access; groups help manage permissions efficiently.
+
+Only use sudo when necessary — root access can break the system if misused.
+
+$PATH is crucial; without it, every command would require full file paths.
+
+Environment variables help store frequently used values or configuration settings.
+
+Scripts rely heavily on variables to make automation flexible and reusable.
+
+Add export in .bashrc to make your variables permanent.
