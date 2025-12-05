@@ -20,7 +20,7 @@ Each day contains:
 | 1   | Linux introduction, basic commands, filesystem | Done   |
 | 2   | File operations, permissions                   | Done    |
 | 3   | Users, groups, sudo, environment variables     | Done    |
-| 4   | Package managers (apt, yum, dnf)               | [ ]    |
+| 4   | Package managers (apt, yum, dnf)               | Done   |
 | 5   | Process management (ps, top, kill, jobs)       | [ ]    |
 | 6   | Disk usage, networking commands                | [ ]    |
 | 7   | Bash scripting basics                          | [ ]    |
