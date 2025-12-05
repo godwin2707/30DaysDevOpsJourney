@@ -1,0 +1,62 @@
+Day 4 — Package Managers (apt, yum, dnf)
+What I Learned
+
+A package manager is used to install, update, remove, and manage software in Linux.
+
+apt is used in Debian/Ubuntu systems, yum and dnf are used in RedHat/CentOS/Fedora.
+
+apt update downloads the latest package list (metadata) — it does not install updates.
+
+apt install downloads .deb packages and installs them using dpkg internally.
+
+Installed packages can be upgraded using apt upgrade.
+
+Repository sources are stored in /etc/apt/sources.list and /etc/apt/sources.list.d/.
+
+Downloaded package metadata is stored in /var/lib/apt/lists/.
+
+.deb installation packages are stored temporarily in /var/cache/apt/archives/.
+
+yum and dnf work similarly to apt but are used on RPM-based distributions.
+
+Package managers make installation simple by handling dependencies automatically.
+
+Commands / Code
+# APT (Debian/Ubuntu/Kali)
+sudo apt update                    # refresh package list
+sudo apt upgrade                   # upgrade installed packages
+sudo apt install package_name      # install package
+sudo apt remove package_name       # uninstall package
+apt search package_name            # search for package
+apt show package_name              # show package details
+
+# Package locations
+cat /etc/apt/sources.list          # repo URLs
+ls /etc/apt/sources.list.d/        # additional repo configs
+ls /var/lib/apt/lists              # downloaded package metadata
+ls /var/cache/apt/archives         # downloaded .deb packages
+
+# YUM (older RHEL/CentOS)
+sudo yum install package_name
+sudo yum update
+sudo yum remove package_name
+
+# DNF (Fedora/new RHEL systems)
+sudo dnf install package_name
+sudo dnf update
+sudo dnf remove package_name
+
+
+Notes
+
+apt update ≠ updates applications, it only updates package index.
+
+apt upgrade installs new package versions present in index.
+
+APT checks $PATH to find the apt binary in /usr/bin/apt.
+
+apt uses repository URLs to fetch metadata and .deb files.
+
+.deb files are downloaded from remote servers and cached locally.
+
+Package managers prevent dependency issues and make installation easier than manual compilation.
