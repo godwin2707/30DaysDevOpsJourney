@@ -1,0 +1,68 @@
+Day 5 — Process Management & Background Jobs
+
+What I Learned
+
+A process is a running program in memory. Linux allows monitoring, killing, prioritizing, and handling them.
+
+ps shows current running processes, while ps aux displays all processes in detail.
+
+grep is used with ps to filter specific processes (e.g., ps aux | grep nginx).
+
+top shows live, real-time system usage (CPU, memory, load).
+
+htop is an improved, interactive version of top with colors and UI.
+
+kill stops processes using their PID; kill -9 force-kills stubborn processes.
+
+nice and renice change process priority to manage CPU usage.
+
+Background tasks can be started with & and controlled using jobs, fg, and bg.
+
+Commands / Code
+# View processes
+ps                           # current processes
+ps aux                       # detailed list of all processes
+ps aux | grep firefox        # filter specific process
+
+# Monitor system in real-time
+top                          # live process monitor
+sudo apt install htop
+htop                         # advanced monitor with UI
+
+# Kill process
+kill PID                     # normal kill
+kill -9 PID                  # force kill (unsafe but effective)
+
+# Process priority
+nice -n 10 program.sh        # start with lower priority
+renice -n 5 -p PID           # change priority of a running process
+
+# Background jobs
+command &                    # run in background
+jobs                         # list background jobs
+fg %1                        # bring job to foreground
+bg %1                        # resume job in background
+
+Notes
+
+ps aux gives a snapshot view, while htop is live updating.
+
+Use ps aux | grep <name> to find PIDs for services you want to monitor or kill.
+
+STAT field examples:
+
+R = Running
+
+S = Sleeping
+
+Z = Zombie
+
+T = Stopped
+
++ = Foreground process
+
+Background tasks continue running even after terminal input stops.
+
+kill -9 force kills and should be used carefully to avoid data loss.
+
+Changing priority (nice, renice) helps prevent system slowdowns during heavy tasks.
