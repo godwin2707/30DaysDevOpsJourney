@@ -1,0 +1,55 @@
+Day 6 — Disk Usage & Networking Commands
+
+What I Learned
+
+df and du help check disk usage and identify heavy directories or files.
+
+df -h displays storage capacity, used/available space in human-readable format.
+
+du -sh shows how large a directory is, useful for cleanup and debugging storage issues.
+
+Logs and cache often consume space, and sudo apt clean helps free disk cache.
+
+Networking commands like ping, nslookup, ss, and curl are essential for connectivity and service troubleshooting.
+
+ping checks if a host is reachable, nslookup/dig resolves domain names to IPs.
+
+ss -tulpn inspects open ports and running network services.
+
+curl allows testing API endpoints and server responses from the terminal.
+
+ip a and ip route help examine IP configuration and routing.
+
+Commands / Code
+# Disk usage
+df -h                         # display disk usage in human-readable size
+du -sh folder/                # size of a directory
+du -h --max-depth=1           # compare sizes of subdirectories
+find / -type f -size +500M    # find large files in system
+sudo apt clean                # clean apt cache to free space
+
+# Networking
+ping google.com               # test connectivity
+nslookup google.com           # DNS lookup
+dig google.com                # detailed DNS information
+ss -tulpn                     # list open listening ports
+ip a                          # show network interfaces & IP addresses
+ip route                      # show routing table
+curl https://example.com      # fetch webpage or API response
+curl -I https://example.com   # fetch only headers
+
+Notes
+
+df gives disk view at filesystem level, du gives disk view at directory/file level.
+
+Checking /var/log, /home, and /tmp is common when space runs low.
+
+Logs, cache, backups, and container images often consume large space in servers.
+
+ping works on ICMP protocol, useful for connectivity but not HTTP status.
+
+curl is ideal for API/URL testing and debugging (headers, status codes, response).
+
+ss is a modern replacement for netstat to inspect ports & active connections.
+
+Understanding both disk and networking commands is necessary for server troubleshooting and monitoring in DevOps.
