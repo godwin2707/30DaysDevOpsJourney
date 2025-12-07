@@ -22,7 +22,7 @@ Each day contains:
 | 3   | Users, groups, sudo, environment variables     | Done    |
 | 4   | Package managers (apt, yum, dnf)               | Done   |
 | 5   | Process management (ps, top, kill, jobs)       | Done   |
-| 6   | Disk usage, networking commands                | [ ]    |
+| 6   | Disk usage, networking commands                | Done    |
 | 7   | Bash scripting basics                          | [ ]    |
 
 ---
