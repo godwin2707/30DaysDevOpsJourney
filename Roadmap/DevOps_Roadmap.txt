@@ -1,0 +1,39 @@
+30 Days DevOps Roadmap
+
+Week 1 - Linux Fundamentals (Day 1-7)
+- Day 1: Linux intro, basic commands (ls, cd, pwd, mkdir, rm), File system structure
+- Day 2: File operations (cp, mv, cat, nano, vi), File permissions (chmod, chown, umask)
+- Day 3: Users, groups, sudo, Environment variables
+- Day 4: Package managers (apt, yum, dnf), Installing/updating software
+- Day 5: Process management (ps, top, kill, nice), Background jobs
+- Day 6: Disk usage (df, du), Networking commands (ping, curl, wget, netstat)
+- Day 7: Bash scripting basics (variables, loops, conditions)
+
+Week 2 - Git & CI/CD Basics (Day 8-14)
+- Day 8: Git intro, installing Git, Creating repo, clone, commit, push
+- Day 9: Branching & merging, Resolving merge conflicts
+- Day 10: Git stash, revert, reset, GitHub/GitLab intro
+- Day 11: CI/CD intro & concepts, Popular tools: Jenkins, GitHub Actions
+- Day 12: Installing Jenkins/GitHub Actions, First pipeline creation
+- Day 13: Automating builds & tests in pipeline
+- Day 14: Integrating Git with CI/CD pipeline
+
+Week 3 - Containers & Orchestration (Day 15-21)
+- Day 15: Intro to Docker & why use it, Installing Docker
+- Day 16: Docker images & containers (docker build, docker run, docker ps)
+- Day 17: Dockerfile basics, Building custom images
+- Day 18: Docker volumes & networks
+- Day 19: Kubernetes intro & core concepts, Minikube installation
+- Day 20: Pods, deployments, services
+- Day 21: Scaling, rolling updates in Kubernetes
+
+Week 4 - Cloud, Automation & Monitoring (Day 22-30)
+- Day 22: AWS intro (Free tier account setup), EC2 basics
+- Day 23: S3 storage basics & permissions
+- Day 24: Infrastructure as Code intro (Terraform basics), First Terraform script
+- Day 25: Terraform variables, outputs, state files
+- Day 26: Configuration management intro (Ansible basics), First playbook
+- Day 27: Monitoring tools intro (Prometheus, Grafana), Installing Prometheus
+- Day 28: Grafana dashboards setup
+- Day 29: Full project: Deploy app -> Dockerize -> Push to registry -> Deploy on K8s -> Monitor
+- Day 30: DevOps interview prep, Resume building + mock questions
