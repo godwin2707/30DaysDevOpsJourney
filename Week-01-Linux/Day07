@@ -1,0 +1,85 @@
+Day 7 — Bash Scripting Basics (Variables, Loops, Conditions)
+
+What I Learned
+
+Bash scripting is used to automate commands, deployments, server tasks, CI/CD jobs, cron jobs, and DevOps workflows.
+
+A Bash script starts with a shebang (#!/bin/bash) to tell the system which interpreter to use.
+
+Variables store values inside scripts and are referenced with $variable.
+
+export makes a variable available to child processes as an environment variable.
+
+Conditions (if, else) allow decision-making based on logic.
+
+Loops (for, while) let scripts repeat tasks automatically.
+
+Variables are temporary by default, but permanent variables can be added to ~/.bashrc or ~/.env_vars and loaded using source.
+
+Scripts must be made executable using chmod +x.
+
+Commands / Code
+# Create script
+nano script.sh
+
+# Add shebang inside file
+#!/bin/bash
+
+# Run script
+chmod +x script.sh
+./script.sh
+
+# Variables
+name="Godwin"
+echo "Hello $name"
+
+# Environment variable (permanent)
+export role="DevOps Engineer"
+echo $role
+
+# Add to ~/.bashrc for permanent use
+echo 'export role="DevOps Engineer"' >> ~/.bashrc
+source ~/.bashrc
+
+# OR store in separate file
+nano ~/.env_vars
+export name="Godwin"
+export role="Engineer"
+
+# Load it
+source ~/.env_vars
+
+# If condition
+if [ $1 -gt 10 ]; then
+    echo "Greater than 10"
+else
+    echo "Less or equal to 10"
+fi
+
+# For loop
+for i in {1..5}; do
+    echo "Iteration $i"
+done
+
+# While loop
+count=1
+while [ $count -le 5 ]; do
+    echo "Count = $count"
+    count=$((count+1))
+done
+
+Notes
+
+Local variable: name="Godwin" (temporary, shell only)
+
+Environment variable: export name="Godwin" (accessible to child processes)
+
+source file loads variables or scripts in current terminal.
+
+~ represents home directory.
+
+./script.sh runs from current directory.
+
+$1, $2 etc represent command-line arguments to scripts.
+
+Bash scripting is heavily used in DevOps for automation, cloud provisioning, CI, backups, monitoring & server config.
