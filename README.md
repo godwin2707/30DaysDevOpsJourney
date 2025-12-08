@@ -23,7 +23,7 @@ Each day contains:
 | 4   | Package managers (apt, yum, dnf)               | Done   |
 | 5   | Process management (ps, top, kill, jobs)       | Done   |
 | 6   | Disk usage, networking commands                | Done    |
-| 7   | Bash scripting basics                          | [ ]    |
+| 7   | Bash scripting basics                          | Done    |
 
 ---
 
