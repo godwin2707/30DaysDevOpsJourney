@@ -1,0 +1,73 @@
+Day 8 — Git Basics, Commits & Repository Setup
+
+What I Learned
+
+Git is a version control system used to track changes and collaborate.
+
+Installed Git and configured user identity using user.name and user.email.
+
+Created a new local repository using git init.
+
+Files must be added to staging area before committing using git add.
+
+git commit creates a snapshot of tracked changes.
+
+Connected local repo to GitHub using git remote add origin.
+
+GitHub no longer supports password authentication — we must use Personal Access Token.
+
+git push uploads commits to GitHub.
+
+credential.helper store saves token locally to avoid retyping.
+
+
+Commands / Code
+
+# Check git version
+git --version
+
+# Configure identity for commits
+git config --global user.name "Godwin Gerald"
+git config --global user.email "renaldamalogodwin2007@gmail.com"
+
+git config --global credential.helper store   # Save token for future pushes
+
+# Create project and initialize Git
+mkdir GitPractice
+cd GitPractice
+git init
+
+# Create file & track changes
+echo "Hello Git" > file.txt
+git status
+git add file.txt
+
+# Commit changes
+git commit -m "Initial commit"
+
+# Connect to GitHub repository
+git remote add origin https://github.com/godwin2707/GitPractice.git
+
+# Rename branch to main (if needed)
+git branch -M main
+
+# Push code to GitHub (use PAT as password)
+git push -u origin main
+
+# Check remote URL
+git remote -v
+
+Notes
+
+Git works in three stages: Working Directory → Staging → Commit.
+
+git add . stages all files; git commit saves snapshot history.
+
+Never use GitHub password for pushing — use Personal Access Token (PAT).
+
+After configuring credential.helper store, Git remembers the token.
+
+git status is used frequently to track uncommitted changes.
+
+Git is essential for DevOps pipelines, CI/CD builds, collaboration, and code rollback.
+
