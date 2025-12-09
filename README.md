@@ -31,7 +31,7 @@ Each day contains:
 
 | Day | Topic                                                | Status |
 | --- | ---------------------------------------------------- | ------ |
-| 8   | Git basics, commits, repository setup                | [ ]    |
+| 8   | Git basics, commits, repository setup                | Done    |
 | 9   | Branching and merging                                | [ ]    |
 | 10  | Git stash, reset, GitHub usage                       | [ ]    |
 | 11  | CI/CD concepts                                       | [ ]    |
