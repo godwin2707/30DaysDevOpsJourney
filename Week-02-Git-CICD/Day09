@@ -1,0 +1,68 @@
+Day 9 — Branching & Merging in Git
+
+What I Learned
+
+Branches allow parallel development without affecting main code.
+
+main or master is usually the production or stable branch.
+
+New features or fixes should be created in separate branches.
+
+git add → git commit → git push saves and uploads code.
+
+Pull Requests (PR) are used in GitHub to merge code with review.
+
+Merging brings branch changes back into the main codebase.
+
+Merge conflicts occur when multiple changes affect the same lines.
+
+Conflicts must be resolved manually, then committed.
+
+Commands / Code
+# Check branches
+git branch
+
+# Create a new branch
+git branch feature1
+
+# Create & switch to branch (recommended)
+git checkout -b feature1
+
+# Switch branches
+git checkout main
+git checkout feature1
+
+# Make changes and commit
+echo "New feature" >> file.txt
+git add file.txt
+git commit -m "Added new feature"
+
+# Merge feature branch into main
+git checkout main
+git merge feature1
+
+# Delete branch after merge
+git branch -d feature1
+
+# Push branch to GitHub
+git push origin feature1
+
+# List remotes
+git remote -v
+
+Notes
+
+git commit saves locally, while git push uploads to GitHub.
+
+Push sends your branch to GitHub, but merging still requires a Pull Request.
+
+Pull Request (PR) = request to merge branch changes into main.
+
+Useful workflow for teams:
+
+Create branch → Work → Commit → Push branch → PR → Review → Merge
+
+
+Merge conflicts appear when the same lines change in both branches, resolved manually.
+
+Git branching is core to collaborative DevOps development and CI/CD pipelines.
