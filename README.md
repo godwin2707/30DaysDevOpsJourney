@@ -32,7 +32,7 @@ Each day contains:
 | Day | Topic                                                | Status |
 | --- | ---------------------------------------------------- | ------ |
 | 8   | Git basics, commits, repository setup                | Done    |
-| 9   | Branching and merging                                | [ ]    |
+| 9   | Branching and merging                                | Done    |
 | 10  | Git stash, reset, GitHub usage                       | [ ]    |
 | 11  | CI/CD concepts                                       | [ ]    |
 | 12  | Installing Jenkins or GitHub Actions, first pipeline | [ ]    |
