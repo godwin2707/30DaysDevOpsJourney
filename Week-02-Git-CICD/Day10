@@ -1,0 +1,72 @@
+Day 10 — Git Stash, Git Reset & GitHub Usage
+
+What I Learned
+
+git stash temporarily saves uncommitted work so I can switch branches safely.
+
+Stashes allow me to pause work-in-progress without committing.
+
+git stash pop restores changes and removes the stash entry.
+
+git reset is used to undo commits or remove changes from history.
+
+--soft, --mixed, and --hard reset each behave differently:
+
+soft → undo commit, keep staged
+
+mixed → undo commit, keep changes
+
+hard → remove commit + changes (dangerous)
+
+
+GitHub is used for hosting repositories, collaboration, PRs, CI/CD pipelines, and code reviews.
+
+Pushing branches and creating pull requests is the standard workflow for merging clean code into main.
+
+
+Commands / Code
+
+# ----------- GIT STASH -------------
+
+git stash               # save uncommitted changes
+git stash list          # show all stashes
+git stash apply         # bring back changes but keep stash
+git stash pop           # bring back changes and remove stash
+git stash drop stash@{0}  # delete a specific stash
+
+# ----------- GIT RESET -------------
+
+git reset --soft HEAD~1  # undo last commit, keep staged
+git reset HEAD~1         # undo commit, keep changes unstaged
+git reset --hard HEAD~1  # delete commit + changes permanently (dangerous)
+
+# ----------- GITHUB USAGE -------------
+
+git remote add origin https://github.com/username/repo.git
+git push -u origin main        # push code to GitHub
+git pull                       # download latest changes
+git clone https://github.com/user/repo.git  # clone repo
+
+git checkout -b feature-login  # create and switch to new branch
+git push origin feature-login  # push feature branch to GitHub
+
+# Pull Requests are created using GitHub UI
+
+Notes
+
+git stash is useful when switching tasks or fixing urgent bugs without losing work.
+
+Always check git stash list before applying or popping.
+
+git reset --hard should never be used on a shared/pushed branch.
+
+GitHub PR workflow ensures clean merges and proper review.
+
+GitHub is essential for DevOps pipelines (CI/CD), automation, Docker builds, and version control of infrastructure.
+
+A common DevOps workflow:
+
+
+Feature Branch → Commit → Push → Pull Request → Review → Merge
+
+
